@@ -2,12 +2,7 @@ import random
 import os
 import time
 from worddb import word_list
-<<<<<<< HEAD
 name = input("What is your name? ").upper()
-=======
-
-name = input(f"What is your name? ").upper()
->>>>>>> 64a8f32134e5edf3a8d326677b783f2049a3e543
 os.system("cls")
 print (f"Hello, {name}! Let's PLAY HANGMAN!!! You got 30secs to PLAY!")
 print("■■ ■■    ■■   ■■       ■■  ■■■■■    ■■■■■  ■■ ■■  ■■    ■■  ■■■■")
@@ -33,10 +28,6 @@ def play(word):
     print(display_hangman(tries))
     print(word_completion)
     print("\n")
-<<<<<<< HEAD
-=======
-    
->>>>>>> 64a8f32134e5edf3a8d326677b783f2049a3e543
     while not guessed and tries > 0:
         guess = input("Please guess a letter or word: ").upper()
         if len(guess) == 1 and guess.isalpha():
@@ -74,10 +65,6 @@ def play(word):
         print(display_hangman(tries))
         print(word_completion)
         print("\n")
-<<<<<<< HEAD
-=======
-    
->>>>>>> 64a8f32134e5edf3a8d326677b783f2049a3e543
     if guessed:
         print(" ■■■    ■■■   ■■    ■■   ■■■   ■■■■■      ■■   ■■■■■■  ■■■  ■■■■")
         print("■■ ■■  ■■ ■■  ■■    ■■  ■■ ■■  ■■  ■■    ■■■■  ■■■■■■ ■■ ■■ ■■■■")
@@ -86,12 +73,7 @@ def play(word):
         print("■■     ■■ ■■  ■■  ■ ■■  ■■■■■  ■■ ■■    ■■■■■■   ■■     ■■   ■■")
         print("■■ ■■  ■■ ■■  ■■   ■■■  ■■ ■■  ■■ ■■    ■■  ■■   ■■   ■■ ■■    ")
         print("■■ ■■  ■■ ■■  ■■    ■■  ■■ ■■  ■■  ■■   ■■  ■■   ■■   ■■ ■■  ■■")
-<<<<<<< HEAD
         print(" ■■■    ■■■   ■■    ■■   ■■■   ■■   ■■  ■■  ■■   ■■    ■■■   ■■")
-=======
-        print(" ■■■    ■■■   ■■    ■■   ■■■   ■■   ■■  ■■  ■■   ■■    ■■■   ■■")    
-        
->>>>>>> 64a8f32134e5edf3a8d326677b783f2049a3e543
         print("You guessed the word right! You win!")
     else:
         print("■■  ■■   ■■■   ■■  ■■    ■■      ■■■    ■■■   ■■■■■■  ■■■■")
@@ -101,13 +83,8 @@ def play(word):
         print(" ■■■■   ■■ ■■  ■■  ■■    ■■     ■■ ■■    ■■     ■■     ■■")
         print("  ■■    ■■ ■■  ■■  ■■    ■■     ■■ ■■  ■■ ■■    ■■       ")
         print("  ■■    ■■ ■■  ■■  ■■    ■■■■■  ■■ ■■  ■■ ■■    ■■     ■■")
-<<<<<<< HEAD
         print("  ■■     ■■■    ■■■■     ■■■■■   ■■■    ■■■     ■■     ■■")
         print("** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ")
-=======
-        print("  ■■     ■■■    ■■■■     ■■■■■   ■■■    ■■■     ■■     ■■")    
-
->>>>>>> 64a8f32134e5edf3a8d326677b783f2049a3e543
         print("Sorry, you ran out of tries. The word was " + word + ". Better luck next time!")
 
 def display_hangman(tries):
